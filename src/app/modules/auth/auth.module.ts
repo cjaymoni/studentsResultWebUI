@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AuthComponent } from './auth.component';
+import { AuthRoutesModule } from './auth-routes.module';
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
-  declarations: [AuthComponent]
+  imports: [CommonModule, AuthRoutesModule],
+  declarations: [],
 })
-export class AuthModule { }
+export class AuthModule {}
+
